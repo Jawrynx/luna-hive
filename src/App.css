@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,4 +22,11 @@ body {
   animation: fadeInAnimation ease 7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+  #text {
+    transform: translateY(-250px);
+    font-size: 60px;
+  }
 }
