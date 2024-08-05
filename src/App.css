@@ -17,6 +17,19 @@ body {
   animation-fill-mode: forwards;
 }
 
+#input-text {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(200, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 10px 10px;
+  animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 #starsign {
   color: rgb(250, 122, 122);
   animation: fadeInAnimation ease 7s;
@@ -29,4 +42,39 @@ body {
     transform: translateY(-250px);
     font-size: 60px;
   }
+}
+
+.starSignForm {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.starSignForm .input-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1.5rem;
+}
+
+.starSignForm label {
+  color:white;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.starSignForm button {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
 }
